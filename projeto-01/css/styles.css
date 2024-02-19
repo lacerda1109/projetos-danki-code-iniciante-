@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+.center {
+    max-width: 1280px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #212343;
+}
+
+.header img {
+    height: 30px;
+    margin-top: 30px;
+}
+
+/* banner */
+.banner {
+    background-image: url(../img/header_bg.png);
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+}
+
+.banner > .center {
+    height: 100%;
+}
+
+/* box lista */
+.box-lista {
+    display: inline-block;
+    margin-top: 170px;
+    background-color: rgba(33, 35, 67, 0.7);
+    width: 50%;
+}
+
+.box-lista ul {
+    list-style-position: inside;
+    color: white;
+    padding: 60px 20px;
+    margin-left: 20px;
+}
+
+.box-lista li {
+    margin: 15px 0;
+}
+
+ /* formulário */
+.form {
+    height: calc(100% + 40px);
+    width: 500px;
+    background-color: white;
+    border: 10px solid rgba(120, 120, 120, 0.4);
+    background-clip: padding-box;
+    float: right;
+    position: relative;
+    top: -20px;
+    padding: 20px 25px;
+}
+
+.form > h2 {
+    font-weight: normal;
+    color: #999999;
+    font-size: 26px;
+}
+
+.input-container span, .warning {
+    font-size: 20px;
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0;
+    color: #bbbbbb;
+}
+
+.warning {
+    margin-top: 30px;
+}
+
+.input-container input[type=text] {
+    width: 100%;
+    height: 55px;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.input-container input[type=text]:focus {
+    outline: 0;
+}
+
+.botao-enviar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form form input[type=submit] {
+    width: 60%;
+    height: 55px;
+    background-color: #212343;
+    border: 0;
+    border-bottom: 5px solid #404368;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form form input[type=submit]:focus {
+    outline: 0;
+}
+
+.form form input[type=submit]:hover {
+    background-color: #1c1d35;
+    border-bottom: 5px solid #373958;
+}
+
+/* sobre mim */
+.sobre-mim-box {
+    background-color: #dddddd;
+    padding: 70px;
+    text-align: center;
+}
+
+.texto-sobre-mim h2 {
+    font-weight: normal;
+}
+
+.texto-sobre-mim p {
+    width: 100%;
+    max-width: 768px;
+    padding-top: 20px;
+    display: inline-block;
+    text-align: justify;
+}
+
+/* imagem */
+#img-seta {
+    width: 60px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -35px;
+}
+
+/* seção c icones */
+.section-1 {
+    padding: 60px 0 90px 0;
+}
+
+.section-1 > .center > h2 {
+    text-align: center;
+    color: #5d4076;
+    font-weight: normal;
+}
+
+.container-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.container-single {
+    float: left;
+    width: 33.33%;
+    margin-bottom: 60px;
+}
+
+.container-single > h2 {
+    margin: 20px 0;
+}
+
+.container-single > p {
+    width: 80%;
+    text-align: justify;
+    display: inline-block;
+}
+
+/* clear */
+
+.clear {
+    clear: both;
+}
+
+/* footer */
+.footer {
+    margin-top: 60px;
+    border-top: 4px solid #888888;
+    height: 80px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer p {
+    color: #888888;
+    margin-bottom: 4px;
+}
+
+/* media querys */
+@media screen and (max-width: 1450px) {
+    .header {
+        width: 100%;
+        height: 70px;
+        background-color: #212343;
+        text-align: center;
+    }
+
+    .header img {
+        height: 20px;
+        margin-top: 23px;
+    }
+
+    .banner {
+        background-image: url(../img/header_bg.png);
+        background-size: cover;
+        height: auto;
+        width: 100%;
+        padding: 70px 0;
+    }
+
+    .box-lista {
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 70px;
+        background-color: rgba(33, 35, 67, 0.7);
+        width: 100%;
+    }
+
+    .form {
+        height: calc(100% + 40px);
+        width: 60%;
+        float: none;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .form {
+        width: 80%;
+    }
+
+    .container-single {
+        float: none;
+        width: 100%;
+        max-width: 300px; /* pulo do gato */
+        display: inline-block;
+        margin-bottom: 60px;
+    }
+
+    .footer {
+        margin: 0;
+    }
+
+    .container-section {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .center {
+        width: 100%;
+    }
+
+    .sobre-mim-box {
+        padding: 30px 30px 70px 30px;
+    }
+}

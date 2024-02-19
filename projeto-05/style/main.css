@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: oswald;
+    color: var(--sec-color);
+}
+
+:root {
+    --app-red: #eb2d2d;
+    --sec-color: #1a1a1a;
+}
+
+html, body {
+    height: 100%;
+}
+
+.center {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+p {
+    font-weight: 300;
+}
+
+.btn {
+    background-color: var(--app-red);
+    font-size: 17px;
+    border: 0;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+    border: 1px solid var(--app-red);
+    transition-property: background-color, color;
+    transition-duration: .4s;
+}
+
+.btn:hover {
+background-color: white;
+color: var(--app-red);
+transition-property: background-color, color;
+transition-duration: .4s;
+}
